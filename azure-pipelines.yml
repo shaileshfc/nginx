@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'a3eda638-d0a0-48a5-9132-af858ff6cbcb'
   imageRepository: 'shaileshfcnginx'
   containerRegistry: 'shaileshxyz.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '/home/vsts/work/1/s/dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'shaileshxyz4490e1be-auth'
 
