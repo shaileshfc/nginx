@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: shaileshfcnginx 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shaileshfcnginx
+  template:
+    metadata:
+      labels:
+        app: shaileshfcnginx 
+    spec:
+      containers:
+        - name: shaileshfcnginx 
+          image: shaileshxyz.azurecr.io/shaileshfcnginx
+          ports:
+          - containerPort: 80
